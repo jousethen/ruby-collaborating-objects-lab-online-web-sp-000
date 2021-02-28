@@ -36,8 +36,10 @@ class Song
     song = filename.split(" - ")
     song[1].delete_suffix!(".mp3")
     new_song = Song.new(song[1])
-    new_
+    @@all << new_song
+    new_song.artist = Artist.find_or_create_by_name(new_song[0])
     
+    return new_song
   end
   
 end
