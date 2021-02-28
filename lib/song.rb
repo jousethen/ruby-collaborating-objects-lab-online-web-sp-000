@@ -13,6 +13,11 @@ class Song
     name.songs << self
   end
   
+  def artist_name=(name)
+    @artist = Artist.
+    name.songs << self
+  end
+  
   def artist
     @artist
   end
