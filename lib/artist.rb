@@ -36,9 +36,10 @@ class Artist
   def self.find_or_create_by_name(name)
     
     @@all.select do |artist|
-      binding.pry
+      
       if artist.name == name
         return artist
+        binding.pry
       end
     end
     
