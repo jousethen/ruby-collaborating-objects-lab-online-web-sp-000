@@ -39,7 +39,6 @@ class Artist
       
       if artist.name == name
         return artist
-        binding.pry
       end
     end
     
