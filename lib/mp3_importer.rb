@@ -12,5 +12,11 @@ class MP3Importer
     return file_arr
   end
   
-  
+  def import 
+    file_arr = self.files
+    
+    file_arr.each do |file|
+      
+    end
+  end
 end
