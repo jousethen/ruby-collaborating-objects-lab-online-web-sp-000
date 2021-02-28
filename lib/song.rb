@@ -37,7 +37,7 @@ class Song
     new_song = Song.new(song[1])
     @@all << new_song
     new_song.artist = Artist.find_or_create_by_name(song[0])
-    
+    p(new_song)
     return new_song
   end
   
