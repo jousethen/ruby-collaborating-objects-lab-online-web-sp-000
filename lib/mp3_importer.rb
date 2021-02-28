@@ -8,6 +8,6 @@ class MP3Importer
   
   def files
     file_arr = Dir.entries(@path)
-    p(file_arr)
+    file_arr.
   end
 end
