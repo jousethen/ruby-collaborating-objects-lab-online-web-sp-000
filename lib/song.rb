@@ -36,7 +36,7 @@ class Song
     song = filename.split(" - ")
     new_song = Song.new(song[1])
     @@all << new_song
-    new_song.artist = Artist.find_or_create_by_name(new_song[0])
+    new_song.artist = Artist.find_or_create_by_name(song[0])
     
     return new_song
   end
