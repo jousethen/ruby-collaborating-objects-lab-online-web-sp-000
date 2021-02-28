@@ -9,7 +9,8 @@ class Song
   end
   
   def artist=(name)
-    @artist = name
+    Artist.find_or_Create
+    
     name.songs << self
   end
   
