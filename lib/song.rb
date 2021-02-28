@@ -32,4 +32,9 @@ class Song
     end
   end
   
+  def self.new_by_filename(filename)
+    
+    
+  end
+  
 end
