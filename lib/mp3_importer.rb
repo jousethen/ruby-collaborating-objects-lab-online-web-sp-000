@@ -16,7 +16,7 @@ class MP3Importer
     file_arr = self.files
     
     file_arr.each do |file|
-      Song.
+      Song.new_by_filename(file)
     end
   end
 end
