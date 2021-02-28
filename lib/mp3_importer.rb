@@ -8,6 +8,8 @@ class MP3Importer
   
   def files
     file_arr = Dir.entries(@path)
-    file_arr.delete_if {|file| file.include?(mp3)}
+    file_arr.delete_if {|file| file.include?(mp3) == false}
+    
+    return file_arr
   end
 end
