@@ -35,7 +35,7 @@ class Song
   def self.new_by_filename(filename)
     song = filename.split(" - ")
     artist = Artist.find_or_create_by_name(song[0])
-    artist.add_song_by_name(song[1])
+    new_song = artist.add_song_by_name(song[1])
     
     return new_song
   end
